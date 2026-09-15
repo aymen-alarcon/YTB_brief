@@ -28,3 +28,302 @@
 [2026-09-15T10:27:10.771+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
 [2026-09-15T10:32:11.174+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
 [2026-09-15T10:32:11.198+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T10:37:11.604+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T10:37:11.643+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T10:42:11.933+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T10:42:11.991+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T10:47:12.346+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T10:47:12.386+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T10:52:12.622+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T10:52:12.658+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T10:57:13.063+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T10:57:13.094+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:02:13.842+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:02:13.920+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2026-09-15T11:02:23.258+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.92s           2026-09-15T11:02:15
+================================================================================
+[2026-09-15T11:02:53.496+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.11s           2026-09-15T11:02:45
+================================================================================
+[2026-09-15T11:03:23.782+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.09s           2026-09-15T11:03:15
+================================================================================
+[2026-09-15T11:03:54.098+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.13s           2026-09-15T11:03:45
+================================================================================
+[2026-09-15T11:04:24.391+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.12s           2026-09-15T11:03:57
+================================================================================
+[2026-09-15T11:04:54.646+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.08s           2026-09-15T11:04:27
+================================================================================
+[2026-09-15T11:05:24.894+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.17s           2026-09-15T11:04:57
+================================================================================
+[2026-09-15T11:05:55.383+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.08s           2026-09-15T11:05:32
+================================================================================
+[2026-09-15T11:06:25.614+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.15s           2026-09-15T11:06:02
+================================================================================
+[2026-09-15T11:06:55.974+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.09s           2026-09-15T11:06:53
+================================================================================
+[2026-09-15T11:07:14.089+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:07:14.119+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2026-09-15T11:07:26.246+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.10s           2026-09-15T11:07:24
+================================================================================
+[2026-09-15T11:07:56.510+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.10s           2026-09-15T11:07:40
+================================================================================
+[2026-09-15T11:08:27.184+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.12s           2026-09-15T11:08:24
+================================================================================
+[2026-09-15T11:08:57.412+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.08s           2026-09-15T11:08:54
+================================================================================
+[2026-09-15T11:09:27.657+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.10s           2026-09-15T11:09:24
+================================================================================
+[2026-09-15T11:09:57.900+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.07s           2026-09-15T11:09:54
+================================================================================
+[2026-09-15T11:10:28.132+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.06s           2026-09-15T11:10:25
+================================================================================
+[2026-09-15T11:10:58.379+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.15s           2026-09-15T11:10:55
+================================================================================
+[2026-09-15T11:11:28.867+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.51s           2026-09-15T11:11:26
+================================================================================
+[2026-09-15T11:11:59.280+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.54s           2026-09-15T11:11:57
+================================================================================
+[2026-09-15T11:12:14.456+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:12:14.485+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2026-09-15T11:12:29.415+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.60s           2026-09-15T11:12:28
+================================================================================
+[2026-09-15T11:12:59.962+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.55s           2026-09-15T11:12:59
+================================================================================
+[2026-09-15T11:13:29.979+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py    718  0.03s             0           1  0.55s           2026-09-15T11:12:59
+================================================================================
+[2026-09-15T11:14:00.180+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py    725  0.00s             0           1  0.18s           2026-09-15T11:13:30
+================================================================================
+[2026-09-15T11:14:30.593+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py    732  0.00s             0           1  0.29s           2026-09-15T11:14:00
+================================================================================
+[2026-09-15T11:15:00.850+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py    739  0.00s             0           1  0.10s           2026-09-15T11:14:30
+================================================================================
+[2026-09-15T11:15:31.287+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/youtube_pipeline.py                           0           1  0.10s           2026-09-15T11:15:28
+================================================================================
+[2026-09-15T11:15:39.337+0000] {manager.py:1128} WARNING - Skipping processing of missing file: /opt/airflow/dags/youtube_pipeline.py
+[2026-09-15T11:17:14.763+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:17:14.794+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:22:15.113+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:22:15.143+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:27:15.708+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:27:15.745+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:32:16.188+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:32:16.223+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:37:16.414+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:37:16.428+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:42:16.600+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:42:16.609+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:47:17.147+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:47:17.158+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:52:17.851+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:52:17.876+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T11:57:18.675+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T11:57:18.698+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:02:19.554+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:02:19.561+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:07:20.346+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:07:20.353+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:12:21.124+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:12:21.132+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:17:21.821+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:17:21.844+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:22:22.609+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:22:22.615+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:27:23.433+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:27:23.448+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:32:24.243+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:32:24.266+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:37:25.125+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:37:25.137+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:42:25.958+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:42:25.974+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:47:26.792+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:47:26.800+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:52:27.643+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:52:27.666+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T12:57:28.454+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T12:57:28.467+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:02:29.164+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:02:29.178+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:07:29.593+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:07:29.646+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:12:30.109+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:12:30.157+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:17:30.873+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:17:30.895+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:22:31.395+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:22:31.408+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:27:31.824+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:27:31.833+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:32:32.154+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:32:32.168+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:37:32.676+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:37:32.706+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:42:33.116+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:42:33.125+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:47:33.584+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:47:33.607+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:52:34.011+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:52:34.038+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
+[2026-09-15T13:57:34.433+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-09-15T13:57:34.443+0000] {manager.py:740} INFO - There are 0 files in /opt/airflow/dags
