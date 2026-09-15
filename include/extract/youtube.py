@@ -31,7 +31,6 @@ response_2 = rqt.get(f"{base_url}/channels", params_2)
 data_2 = response_2.json()
 
 playlist_id = data_2["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
-# page_token = data_2["nextPageToken"]
 
 # print(playlist_id)
 
@@ -39,8 +38,7 @@ params_3 = {
     "part": "contentDetails",
     "playlistId": playlist_id,
     "key": api_key,
-    "maxResults": 50,
-    # "pageToken" : page_token
+    "maxResults": 25,
 }
 
 response_3 = rqt.get(f"{base_url}/playlistItems", params_3)
