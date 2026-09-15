@@ -76,7 +76,3 @@ def extract():
     video_details = get_video_details(video_ids)
 
     return video_details
-
-
-data = extract()
-print(data)

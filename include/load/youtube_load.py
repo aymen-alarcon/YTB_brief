@@ -1,65 +1,89 @@
 import os
-import requests as rqt
-import pprint as pr 
+import psycopg2
 from dotenv import load_dotenv
 
-
-load_dotenv(".env")
-
-base_url = os.getenv("URL")
-api_key = os.getenv("API_KEY")
-
-params = {
-    "q": "@ElGrandeToto",
-    "type": "channel",
-    "key": api_key
-}
-
-response = rqt.get(f"{base_url}/search", params)
-data = response.json()
-channel_id = data["items"][0]["id"]["channelId"]
-
-# print(channel_id)
-
-params_2 = {
-    "part": "contentDetails",
-    "id": channel_id,
-    "key": api_key
-}
-
-response_2 = rqt.get(f"{base_url}/channels", params_2)
-data_2 = response_2.json()
-
-playlist_id = data_2["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
-
-# print(playlist_id)
-
-params_3 = {
-    "part": "contentDetails",
-    "playlistId": playlist_id,
-    "key": api_key,
-    "maxResults": 25,
-}
-
-response_3 = rqt.get(f"{base_url}/playlistItems", params_3)
-data_3 = response_3.json()
-
-playlist_ids = []
+load_dotenv()
 
 
-for video in data_3["items"]:
-    playlist_ids.append(video["contentDetails"]["videoId"])
-    
-# print(playlist_ids)
+def get_connection():
+    return psycopg2.connect(
+        host="postgres",
+        port=5432,
+        database=os.getenv("METADATA_DATABASE_NAME"),
+        user=os.getenv("POSTGRES_CONN_USERNAME"),
+        password=os.getenv("POSTGRES_CONN_PASSWORD")
+    )
 
-for id in playlist_ids:
-    params_4 = {
-        "part": "contentDetails",
-        "id": id,
-        "key": api_key,
-    }
 
-    response_4 = rqt.get(f"{base_url}/videos", params_4)
-    data_4 = response_4.json()
+def create_table():
+    conn = get_connection()
+    cursor = conn.cursor()
 
-    pr.pprint(data_4)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS youtube_videos (
+            video_id VARCHAR(50) PRIMARY KEY,
+            channel_id VARCHAR(100),
+            channel_title TEXT,
+            title TEXT,
+            description TEXT,
+            published_at TIMESTAMP,
+            duration TEXT,
+            view_count BIGINT,
+            like_count BIGINT,
+            comment_count BIGINT
+        );
+    """)
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+
+def load_videos(videos):
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    for video in videos:
+        snippet = video.get("snippet", {})
+        content_details = video.get("contentDetails", {})
+        statistics = video.get("statistics", {})
+
+        cursor.execute("""
+            INSERT INTO youtube_videos (
+                video_id,
+                channel_id,
+                channel_title,
+                title,
+                description,
+                published_at,
+                duration,
+                view_count,
+                like_count,
+                comment_count
+            )
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON CONFLICT (video_id)
+            DO UPDATE SET
+                title = EXCLUDED.title,
+                description = EXCLUDED.description,
+                view_count = EXCLUDED.view_count,
+                like_count = EXCLUDED.like_count,
+                comment_count = EXCLUDED.comment_count;
+        """, (
+            video["id"],
+            snippet.get("channelId"),
+            snippet.get("channelTitle"),
+            snippet.get("title"),
+            snippet.get("description"),
+            snippet.get("publishedAt"),
+            content_details.get("duration"),
+            int(statistics.get("viewCount", 0)),
+            int(statistics.get("likeCount", 0)),
+            int(statistics.get("commentCount", 0))
+        ))
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()
