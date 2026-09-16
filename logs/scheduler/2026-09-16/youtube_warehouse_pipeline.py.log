@@ -1,0 +1,92 @@
+[2026-09-16T15:09:14.868+0000] {processor.py:186} INFO - Started process (PID=3575) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:14.882+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:09:14.905+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:14.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:15.072+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:15.188+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.186+0000] {override.py:1932} INFO - Created Permission View: can read on DAG:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.206+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.205+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.218+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.217+0000] {override.py:1932} INFO - Created Permission View: can edit on DAG:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.245+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.244+0000] {override.py:1932} INFO - Created Permission View: can read on DAG Run:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.263+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.262+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG Run:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.276+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.276+0000] {override.py:1932} INFO - Created Permission View: can create on DAG Run:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.285+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.284+0000] {override.py:1932} INFO - Created Permission View: menu access on DAG Run:youtube_pipeline_warehouse
+[2026-09-16T15:09:15.286+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.286+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:09:15.298+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.297+0000] {dag.py:3262} INFO - Creating ORM DAG for youtube_pipeline_warehouse
+[2026-09-16T15:09:15.300+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:15.299+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:09:15.326+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.554 seconds
+[2026-09-16T15:09:45.548+0000] {processor.py:186} INFO - Started process (PID=3583) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:45.554+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:09:45.562+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:45.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:45.719+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:09:45.748+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:45.748+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:09:45.767+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:09:45.767+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:09:45.788+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.247 seconds
+[2026-09-16T15:10:16.128+0000] {processor.py:186} INFO - Started process (PID=3591) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:16.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:10:16.133+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:16.132+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:16.250+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:16.296+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:16.295+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:10:16.324+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:16.324+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:10:16.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.228 seconds
+[2026-09-16T15:10:46.960+0000] {processor.py:186} INFO - Started process (PID=3601) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:46.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:10:46.984+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:46.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:47.462+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:10:47.727+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:47.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:10:47.901+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:10:47.900+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:10:47.984+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 1.110 seconds
+[2026-09-16T15:11:18.657+0000] {processor.py:186} INFO - Started process (PID=3609) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:18.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:11:18.663+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:18.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:18.758+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:18.796+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:18.796+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:11:18.819+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:18.819+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:11:18.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.197 seconds
+[2026-09-16T15:11:49.176+0000] {processor.py:186} INFO - Started process (PID=3617) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:49.179+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:11:49.181+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:49.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:49.335+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:11:49.404+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:49.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:11:49.460+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:11:49.460+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:11:49.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.313 seconds
+[2026-09-16T15:12:19.947+0000] {processor.py:186} INFO - Started process (PID=3626) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:20.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:12:20.278+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:20.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:20.426+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:20.447+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:20.447+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:12:20.476+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:20.476+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:12:20.504+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.596 seconds
+[2026-09-16T15:12:50.891+0000] {processor.py:186} INFO - Started process (PID=3635) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:50.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:12:50.895+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:50.895+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:50.992+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:51.018+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:51.018+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:12:51.033+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:51.033+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:12:51.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.171 seconds
+[2026-09-16T15:12:59.030+0000] {processor.py:186} INFO - Started process (PID=3642) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:59.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:12:59.035+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:59.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:59.146+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:12:59.180+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:59.179+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:12:59.202+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:12:59.200+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:12:59.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.211 seconds
+[2026-09-16T15:13:29.571+0000] {processor.py:186} INFO - Started process (PID=3650) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:29.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:13:29.576+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:29.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:29.690+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:29.712+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:29.712+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:13:29.727+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:29.727+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:13:29.769+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.205 seconds
+[2026-09-16T15:13:48.500+0000] {processor.py:186} INFO - Started process (PID=3653) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:48.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:13:48.505+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:48.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:48.618+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:13:48.653+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:48.652+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:13:48.673+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:13:48.673+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:13:48.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.229 seconds
+[2026-09-16T15:14:19.165+0000] {processor.py:186} INFO - Started process (PID=3662) to work on /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:14:19.167+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/youtube_warehouse_pipeline.py for tasks to queue
+[2026-09-16T15:14:19.169+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:14:19.169+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:14:19.240+0000] {processor.py:925} INFO - DAG(s) 'youtube_pipeline_warehouse' retrieved from /opt/airflow/dags/youtube_warehouse_pipeline.py
+[2026-09-16T15:14:19.262+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:14:19.261+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-09-16T15:14:19.278+0000] {logging_mixin.py:190} INFO - [2026-09-16T15:14:19.278+0000] {dag.py:4180} INFO - Setting next_dagrun for youtube_pipeline_warehouse to None, run_after=None
+[2026-09-16T15:14:19.300+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/youtube_warehouse_pipeline.py took 0.140 seconds

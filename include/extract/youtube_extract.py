@@ -56,7 +56,7 @@ def get_video_details(video_ids):
 
     for video_id in video_ids:
         params = {
-            "part": "contentDetails",
+            "part": "contentDetails,snippet,statistics",
             "id": video_id,
             "key": API_KEY
         }

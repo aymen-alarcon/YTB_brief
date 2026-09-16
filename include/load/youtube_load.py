@@ -91,3 +91,4 @@ def load_videos(videos):
 
     cursor.close()
     conn.close()
+
