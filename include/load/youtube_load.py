@@ -20,7 +20,11 @@ def create_table():
     cursor = conn.cursor()
 
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS youtube_videos (
+        DROP TABLE IF EXISTS youtube_videos CASCADE;
+    """)
+
+    cursor.execute("""
+        CREATE TABLE youtube_videos (
             video_id VARCHAR(50) PRIMARY KEY,
             channel_id VARCHAR(100),
             channel_title TEXT,
