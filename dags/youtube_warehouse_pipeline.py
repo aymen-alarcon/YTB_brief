@@ -16,7 +16,7 @@ def read_json_file():
         return json.load(f)
 
 with DAG(
-    dag_id="youtube_pipeline_warehouse",
+    dag_id="youtube_warehouse_pipeline",
     start_date=datetime(2026, 9, 16),
     schedule=None,
     catchup=False
@@ -27,21 +27,32 @@ with DAG(
         python_callable=read_json_file
     )
 
-    create_table = PythonOperator(
+    create_staging_area = PythonOperator(
         task_id="create_staging",
-        python_callable=load_videos.create_table
+        python_callable=load_videos.create_staging_table
+    )
+
+    load_staging_area = PythonOperator(
+        task_id="load_staging",
+        python_callable=load_videos.load_staging_table,
+        op_args=[read_json_task.output]
     )
 
     transform_task = PythonOperator(
         task_id="transform_data",
         python_callable=transform_videos.transform,
+        op_args=[load_staging_area.output]
+    )
+
+    create_core_area = PythonOperator(
+        task_id="create_core",
+        python_callable=load_videos.create_core_table
+    )
+
+    load_core_area = PythonOperator(
+        task_id="load_core",
+        python_callable=load_videos.load_core_table,
         op_args=[read_json_task.output]
     )
 
-    load_table = PythonOperator(
-        task_id="update_core",
-        python_callable=load_videos.load_videos,
-        op_args=[transform_task.output]
-    )
-
-    create_table >> read_json_task >> transform_task >> load_table
+    read_json_task >> create_staging_area >> load_staging_area >> transform_task >> create_core_area >> load_core_area

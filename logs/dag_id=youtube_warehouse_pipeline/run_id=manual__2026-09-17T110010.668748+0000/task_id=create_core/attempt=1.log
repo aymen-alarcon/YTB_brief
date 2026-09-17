@@ -1,0 +1,17 @@
+[2026-09-17T11:00:17.794+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-09-17T11:00:17.855+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_warehouse_pipeline.create_core manual__2026-09-17T11:00:10.668748+00:00 [queued]>
+[2026-09-17T11:00:17.887+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_warehouse_pipeline.create_core manual__2026-09-17T11:00:10.668748+00:00 [queued]>
+[2026-09-17T11:00:17.891+0000] {taskinstance.py:2885} INFO - Starting attempt 1 of 1
+[2026-09-17T11:00:17.937+0000] {taskinstance.py:2908} INFO - Executing <Task(PythonOperator): create_core> on 2026-09-17 11:00:10.668748+00:00
+[2026-09-17T11:00:17.949+0000] {standard_task_runner.py:72} INFO - Started process 2334 to run task
+[2026-09-17T11:00:17.960+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_warehouse_pipeline', 'create_core', 'manual__2026-09-17T11:00:10.668748+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/youtube_warehouse_pipeline.py', '--cfg-path', '/tmp/tmpmewr0yu5']
+[2026-09-17T11:00:17.965+0000] {standard_task_runner.py:105} INFO - Job 106: Subtask create_core
+[2026-09-17T11:00:18.060+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_warehouse_pipeline.create_core manual__2026-09-17T11:00:10.668748+00:00 [running]> on host 5131746b1558
+[2026-09-17T11:00:18.200+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_warehouse_pipeline' AIRFLOW_CTX_TASK_ID='create_core' AIRFLOW_CTX_EXECUTION_DATE='2026-09-17T11:00:10.668748+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-17T11:00:10.668748+00:00'
+[2026-09-17T11:00:18.204+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-09-17T11:00:18.266+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-09-17T11:00:18.282+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-09-17T11:00:18.286+0000] {taskinstance.py:361} INFO - Marking task as SUCCESS. dag_id=youtube_warehouse_pipeline, task_id=create_core, run_id=manual__2026-09-17T11:00:10.668748+00:00, execution_date=20260917T110010, start_date=20260917T110017, end_date=20260917T110018
+[2026-09-17T11:00:18.340+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-09-17T11:00:18.385+0000] {taskinstance.py:3925} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-09-17T11:00:18.394+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

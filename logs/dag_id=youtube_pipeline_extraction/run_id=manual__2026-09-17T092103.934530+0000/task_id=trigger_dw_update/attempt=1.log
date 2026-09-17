@@ -1,0 +1,76 @@
+[2026-09-17T09:21:24.943+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-09-17T09:21:24.985+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_pipeline_extraction.trigger_dw_update manual__2026-09-17T09:21:03.934530+00:00 [queued]>
+[2026-09-17T09:21:25.004+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_pipeline_extraction.trigger_dw_update manual__2026-09-17T09:21:03.934530+00:00 [queued]>
+[2026-09-17T09:21:25.009+0000] {taskinstance.py:2885} INFO - Starting attempt 1 of 1
+[2026-09-17T09:21:25.029+0000] {taskinstance.py:2908} INFO - Executing <Task(TriggerDagRunOperator): trigger_dw_update> on 2026-09-17 09:21:03.934530+00:00
+[2026-09-17T09:21:25.038+0000] {standard_task_runner.py:72} INFO - Started process 1020 to run task
+[2026-09-17T09:21:25.043+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_pipeline_extraction', 'trigger_dw_update', 'manual__2026-09-17T09:21:03.934530+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/youtube_extract_pipeline.py', '--cfg-path', '/tmp/tmpov_w_8t9']
+[2026-09-17T09:21:25.047+0000] {standard_task_runner.py:105} INFO - Job 61: Subtask trigger_dw_update
+[2026-09-17T09:21:25.132+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_pipeline_extraction.trigger_dw_update manual__2026-09-17T09:21:03.934530+00:00 [running]> on host 5131746b1558
+[2026-09-17T09:21:25.273+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_pipeline_extraction' AIRFLOW_CTX_TASK_ID='trigger_dw_update' AIRFLOW_CTX_EXECUTION_DATE='2026-09-17T09:21:03.934530+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-17T09:21:03.934530+00:00'
+[2026-09-17T09:21:25.277+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-09-17T09:21:25.333+0000] {taskinstance.py:3337} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/trigger_dagrun.py", line 206, in execute
+    dag_run = trigger_dag(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api/common/trigger_dag.py", line 133, in trigger_dag
+    raise DagNotFound(f"Dag id {dag_id} not found in DagModel")
+airflow.exceptions.DagNotFound: Dag id youtube_warehouse_pipeline not found in DagModel
+[2026-09-17T09:21:25.364+0000] {taskinstance.py:1242} INFO - Marking task as FAILED. dag_id=youtube_pipeline_extraction, task_id=trigger_dw_update, run_id=manual__2026-09-17T09:21:03.934530+00:00, execution_date=20260917T092103, start_date=20260917T092124, end_date=20260917T092125
+[2026-09-17T09:21:25.417+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-09-17T09:21:25.420+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 61 for task trigger_dw_update (Dag id youtube_warehouse_pipeline not found in DagModel; 1020)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3030, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 282, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3209, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/trigger_dagrun.py", line 206, in execute
+    dag_run = trigger_dag(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api/common/trigger_dag.py", line 133, in trigger_dag
+    raise DagNotFound(f"Dag id {dag_id} not found in DagModel")
+airflow.exceptions.DagNotFound: Dag id youtube_warehouse_pipeline not found in DagModel
+[2026-09-17T09:21:25.438+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-09-17T09:21:25.466+0000] {taskinstance.py:3925} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-09-17T09:21:25.473+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
