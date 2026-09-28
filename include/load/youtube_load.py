@@ -19,9 +19,7 @@ def create_core_table():
     conn = get_connection()
     cursor = conn.cursor()
 
-    cursor.execute("""
-        DROP TABLE IF EXISTS youtube_videos CASCADE;
-    """)
+    cursor.execute("""DROP TABLE IF EXISTS youtube_videos CASCADE;""")
 
     cursor.execute("""
         CREATE TABLE youtube_videos (
