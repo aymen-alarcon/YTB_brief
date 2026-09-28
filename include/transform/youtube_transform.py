@@ -37,5 +37,6 @@ def transform(staging_data):
         date["statistics"]["likeCount"] = int(date["statistics"]["likeCount"])
         date["statistics"]["favoriteCount"] = int(date["statistics"]["favoriteCount"])
         date["statistics"]["commentCount"] = int(date["statistics"]["commentCount"])
+        date["statistics"]["LikePerView"] = (date["statistics"]["likeCount"] / date["statistics"]["viewCount"])
 
     print(staging_data)
